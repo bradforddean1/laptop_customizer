@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
+import Summary from "./Summary";
 
-describe("App", () => {
-  it("renders without crashing", () => {
+describe("Summary Component", () => {
+  // Smoke test
+  test("Renders", () => {
     const div = document.createElement("div");
-    ReactDOM.render(<App />, div);
+    ReactDOM.render(<Summary />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 });
